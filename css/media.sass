@@ -151,3 +151,45 @@
             background-color: #161616
         .container
             justify-content: center
+
+
+@media screen and (max-width: 480px)
+    .container
+        width: 100%
+    .sliderbox
+        h1
+            white-space: normal
+        .sliderbox__button
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            span
+                margin: 15px 0
+            .button__catigories
+                margin-left: 0
+    #favorites
+        .favorites__box
+            .favorites__item
+                width: 80%
+    #advantage
+        .advantage__box
+            .advantage__item
+                width: 80%
+    #popular
+        .popular__box
+            .popular__item
+                width: 80%
+                .stock
+                    left: 80px
+    #bottom
+        footer
+            .footer__content
+                flex-direction: column
+                align-items: center
+                .footer__logo
+                    margin-bottom: 15px
+                .callback
+                    .callback__text
+                        text-align: left
+                        .callback__number
+                            // text-align: left
