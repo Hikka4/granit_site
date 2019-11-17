@@ -201,6 +201,10 @@
   .sliderbox .sliderbox__button {
     padding-left: 20px;
   }
+  #popular .popular__box .popular__item .item__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
   #services .services__box .services__item {
     width: 80%;
   }
