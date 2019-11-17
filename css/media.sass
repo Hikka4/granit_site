@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px)
+    .container
+        width: 80%
+    
+    .nav 
+        display: block
+        padding: 20px 20px 40px 20px
+        position: relative
+    .nav__hamburger
+        display: block
+        float: right
+        
+        
+    .nav__menu
+        overflow: hidden
+        height: 312px
+        // transition: max-height 10s 10s 
+        display: none
+        flex-direction: column
+        padding-top: 35px
+        clear: right
+        li
+            height: auto
+
+    .expand
+        max-height: 100%
+
+    #favorites
+        .favorites__box
+            // flex-direction: column
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            .favorites__item
+                margin: 10px
+                width: 40%
+                .content__img
+                    width: 100%
+    #popular
+        .popular__box
+            flex-wrap: wrap
+            justify-content: center
+            .popular__item
+                width: 40%
+                margin: 10px
+                .stock
+                    left: 50px
+    #services
+        .services__box
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            .services__item
+                margin: 10px
+                width: 40%
+    #advantage
+        .advantage__box
+            flex-wrap: wrap
+            justify-content: center
+            .advantage__item
+                width: 40%
+                margin: 10px
+
+@media screen and (max-width: 699px)
+    header
+        flex-wrap: wrap
+        justify-content: center
+        .header__logo
+            margin-bottom: 30px
+
+    .nav__menu
+        clear: right
+    #popular
+        .popular__box
+            flex-direction: column
+            align-content: center
+            .popular__item
+                width: 50%
+
+    #services
+        .services__box
+            flex-direction: column
+            .services__item
+                width: 70%
+@media screen and (max-width: 576px)
+    .container
+        width: 540px
+        margin: 0 auto
+    #header
+        header
+            flex-direction: column
+            justify-content: center
+            .header__logo
+                margin-bottom: 15px
+    #favorites
+        .favorites__box
+            flex-direction: column
+            justify-content: center
+            .favorites__item
+                margin-bottom: 25px
+                width: 60%
+    #advantage
+        .advantage__box
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            .advantage__item
+                width: 60%
+                margin-bottom: 25px
+    #popular
+        .popular__box
+            .popular__item
+                .stock
+                    left: 50px
+    #services
+        .services__box
+            flex-direction: column
+            .services__item
+                width: 60%
+@media screen and (max-width: 575px) 
+    .container
+        width: 100%
+    .sliderbox
+        text-align: center
+        .title
+            text-align: left
+            padding-left: 20px
+
+    #services
+        .services__box
+            .services__item
+                width: 80%
+
+    #maps
+        #map
+            background-image: none
+            background-color: #161616
+        .container
+            justify-content: center

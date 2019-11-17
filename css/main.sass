@@ -1,0 +1,491 @@
+@import '../fonts/stylesheet.css'
+
+
+* 
+    margin: 0
+    padding: 0
+
+body 
+    font-family: 'Gotham Pro', sans-serif
+
+a 
+    text-decoration: none
+
+ul 
+    list-style-type: none
+
+.container 
+    width: 940px
+    margin: 0 auto
+
+
+
+
+header
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: space-between
+    margin-top: 30px
+    margin-bottom: 30px
+    .callback
+        display: flex
+        align-items: center
+    .callback__text 
+        text-align: right
+        margin-right: 30px
+        .callback__number
+            color: #292929
+            font-family: 'Gotham Pro', sans-serif
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+        .callback__title
+            color: #969696
+            font-weight: 400
+            line-height: 22px
+            font-size: 11px
+.callback__button
+    a
+        font-family: 'Gotham Pro', sans-serif
+        color: #292929
+        font-weight: 600
+        font-size: 12px
+        line-height: 22px
+        padding: 15px 25px
+        box-sizing: border-box
+        border: 2px solid #292929
+        &:hover
+            background-color: #ffcc00
+            border: 2px solid #ffcc00
+
+.header__logo
+    display: flex
+    align-items: center
+
+.logo__img
+    margin-right: 14px
+
+.logo__name
+    font-size: 20px
+    font-family: 'Gotham Pro', sans-serif
+    font-weight: 700
+    letter-spacing: 2px
+    line-height: 22px
+    color: #292929
+    text-transform: uppercase
+
+.logo__title
+    font-size: 11px
+    line-height: 22px
+    font-weight: 300
+    color: #969696
+
+
+
+.nav 
+    background-color: #ffcc00
+    position: relative
+    top: 26px
+
+.nav__hamburger
+    display: none
+    span
+        width: 30px
+        height: 3px
+        display: block
+        background-color: black
+        &:first-child
+            margin-bottom: 5px
+        &:last-child
+            margin-top: 5px
+.active
+    span
+        position: relative
+        transition: .8s
+        &:nth-child(1)
+            transform: rotate(45deg)
+            top: 8px
+        &:nth-child(2)
+            transform: rotate(45deg)
+        &:nth-child(3)
+            bottom: 8px
+            
+            transform: rotate(-45deg)
+            
+            
+.nav__menu
+    padding: 0 20px 0 20px
+    display: flex
+    li
+        display: inline-block
+        height: 100%
+        width: 100%
+        text-align: center
+        &:last-child
+            padding-right: 0
+        &:first-child
+            padding-left: 0
+        a
+            width: 100%
+            padding: 15px 0
+            line-height: 22px
+            font-size: 14px
+            display: inline-block
+            color: #000
+            font-weight: 600
+            &:hover
+                text-decoration: underline
+                text-decoration-color: #c2a103
+
+.sliderbox 
+    background-image: url('../img/slider_img.png');
+    height: 100%
+    background-position: center center
+    background-size: cover
+    h1
+        padding-top: 170px
+        padding-bottom: 40px
+        color: #ffffff
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 36px
+    .title
+        color: #ffffff
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+    .sliderbox__button
+        padding-top: 85px
+        padding-bottom: 159px
+        color: #ffffff
+        font-size: 12px
+        font-weight: 300
+        .button__info
+            padding: 20px 30px
+            background-color: #ffd200
+            margin-right: 30px
+            color: #0d0d0d
+            line-height: 22px
+            font-weight: 600
+            &:hover
+                text-decoration: underline
+                text-decoration-color: #c2a103
+        .button__catigories
+            color: #ffffff
+            margin-left: 15px
+            font-weight: 600
+            text-decoration: underline
+            line-height: 22px
+            &:hover
+                color: #ffd200
+
+.section__name
+    text-align: center
+    margin-bottom: 60px
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 20px
+    color: #292929
+
+#favorites
+    margin-top: 80px
+    margin-bottom: 80px
+    .favorites__box
+        display: flex
+        justify-content: space-between
+        .favorites__item
+            width: 32%
+            text-align: center
+            border: 2px solid #f6f6f6
+            .content__img
+                    margin-top: 52px
+                    max-width: 240px
+                    max-height: 117px
+                    margin-bottom: 46px
+            .item__content
+                .content__name
+                    color: #292929
+                    font-weight: 600
+                    font-size: 15px
+                    text-decoration: underline
+                    text-decoration-color: #626262
+                    margin-bottom: 20px
+                .content__title
+                    color: #626262
+                    font-size: 13px
+                    font-weight: 300
+                    margin: 0 20px 30px 20px
+                .content__cost
+                    color: #0f0f0f
+                    font-size: 16px
+                    font-weight: 600
+                    margin-bottom: 52px
+                .content__button
+                    margin-bottom: 55px
+                    a
+                        color: #0d0d0d
+                        font-size: 12px
+                        font-weight: 600
+                        line-height: 22px
+                        padding: 20px 55px
+                        background-color: #ffd200
+                        &:hover
+                            text-decoration: underline
+                            text-decoration-color: #c2a103
+
+
+#advantage
+    padding-top: 80px
+    padding-bottom: 80px
+    background-color: #f4f4f4
+    .advantage__box
+        display: flex
+        justify-content: space-between
+        .advantage__item
+            width: 30%
+            border: 2px solid #ffffff
+            text-align: center
+            img
+                width: 50px
+                height: 50px
+                margin-top: 40px
+            .item__content
+                color: #292929
+                .content__name
+                    font-size: 15px
+                    font-weight: 600
+                    margin-top: 40px
+                .content__title
+                    margin-top: 20px
+                    line-height: 18px
+                    font-weight: 300
+                    font-size: 12px
+                    margin: 20px 40px 43px 40px
+            &:hover
+                background-color: #ffffff
+                box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05)
+
+#popular
+    margin: 80px 0 80px 0
+    .popular__box
+        display: flex
+        justify-content: space-between
+        .popular__item
+            width: 23%
+            border: 2px solid #f6f6f6
+            text-align: center
+            padding-bottom: 39px
+            position: relative
+            .item__img
+                margin: 20px 20px 20px 20px
+            .stock
+                position: absolute
+                top: 37px
+                left: 37px
+                background-color: #ff0000
+                font-size: 10px
+                font-weight: 500
+                text-transform: uppercase
+                padding: 6px 10px
+                color: #ffffff
+            .item__content
+                .content__name
+                    color: #292929
+                    text-decoration: underline
+                    text-decoration-color: #c9c9c9
+                    font-weight: 400
+                    font-size: 13px
+                    margin-bottom: 24px
+                .content__cost
+                    color: #000000
+                    font-size: 16px
+                    font-weight: 600
+                    margin-bottom: 45px
+                    .last__cost
+                        color: #979797
+                        font-size: 10px
+                        text-decoration: line-through
+                        margin-right: 15px
+                    .red__cost
+                        color: #ff0000
+                        font-size: 16px
+                        font-weight: 600
+                .content__button
+                    a
+                        color: #0d0d0d
+                        background-color: #ffd200
+                        padding: 20px 70px
+                        line-height: 22px
+                        font-weight: 600
+                        &:hover
+                            text-decoration: underline
+                            text-decoration-color: #c2a103
+
+#services
+    padding-bottom: 80px
+    padding-top: 80px
+    background-color: #f4f4f4
+    .services__box
+        display: flex
+        justify-content: space-between
+        .services__item
+            text-align: center
+            border: 2px solid #ffffff
+            padding-bottom: 39px
+            width: 30%
+            img
+                min-height: 127px
+                max-width: 252px
+                margin: 47px 25px 25px 25px
+
+            .item__name
+                color: #292929
+                font-size: 14px
+                font-weight: 600
+                text-decoration: underline
+                text-decoration-color: #c1c1c1
+
+#maps
+    position: relative
+    padding-bottom: 80px
+    #map
+        position: absolute 
+        width: 100%
+        height: 100%
+        background-size: cover
+        background-image: url(../img/map.jpg)
+        // background-position-x: -140px
+        z-index: -1
+    .container
+        display: flex
+        justify-content: flex-end
+    .contact
+        margin-top: 80px
+        padding: 60px 0px 70px 61px
+        display: inline-block
+        z-index: 2
+        background-color: #ffffff
+        .contact__head
+            font-size: 20px
+            font-weight: 700
+            color: #292929
+            text-transform: uppercase
+            margin-bottom: 53px
+        .phone__number
+            margin-bottom: 40px
+            &::before
+                content: ''
+                display: inline-block
+                height: 12px
+                width: 12px
+                background-image: url(../img/phone__icon.png)
+                margin-right: 18px
+            span
+                display: inline-block
+                line-height: 30px
+                font-size: 14px
+                font-weight: 600
+                color: #292929
+                text-transfom: uppercase
+                &:last-child
+                    margin-left: 35px
+        .adress
+            font-size: 14px
+            font-weight: 400
+            color: #292929    
+            margin-bottom: 40px
+            margin-right: 78px
+            &::before
+                content: ''
+                display: inline-block
+                height: 15px
+                width: 10px
+                background-image: url(../img/location__icon.png)
+                background-repeat: no-repeat
+                margin-right: 20px
+                vertical-align: top
+            span
+                display: inline-block
+                width: 195px
+        .mail
+            color: #292929
+            font-size: 14px
+            font-weight: 400
+            text-decoration: underline
+            text-decoration-color: #c9c9c9
+            &::before
+                content: ''
+                display: inline-block
+                height: 10px
+                width: 14px
+                background-image: url(../img/mail__icon.png)
+                margin-right: 16px
+
+footer
+    background-color: #292929
+    padding-top: 55px
+    padding-bottom: 43px
+
+.footer__content
+    display: flex
+    justify-content: space-between 
+    
+    .footer__logo
+        display: flex
+        align-items: center
+        .logo__img
+            margin-right: 14px
+        .logo__name
+            font-size: 20px
+            font-family: 'Gotham Pro', sans-serif
+            font-weight: 700
+            letter-spacing: 2px
+            line-height: 22px
+            color: #ffffff
+            text-transform: uppercase
+        .logo__title
+            font-size: 11px
+            line-height: 22px
+            font-weight: 300
+            color: #969696
+    .callback
+        display: flex
+        align-items: center
+        .callback__text 
+            text-align: right
+        .callback__number
+            color: #ffffff
+            font-family: 'Gotham Pro', sans-serif
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+        .callback__title
+            color: #ffffff
+            font-weight: 400
+            line-height: 22px
+            font-size: 11px
+    
+.footer__copyright
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 45px
+    .copyright__name
+        line-height: 22px
+        font-size: 12px
+        color: #ffffff
+    .callback__button
+        a
+            font-family: 'Gotham Pro', sans-serif
+            color: #ffffff
+            font-weight: 600
+            font-size: 12px
+            line-height: 22px
+            padding: 15px 25px
+            box-sizing: border-box
+            border: 2px solid #ffffff
+            &:hover
+                color: #292929
+                background-color: #ffcc00
+                border: 2px solid #ffcc00
