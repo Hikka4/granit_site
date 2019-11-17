@@ -188,10 +188,17 @@
     width: 100%;
   }
   .sliderbox {
-    text-align: center;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .sliderbox h1 {
+    padding-left: 20px;
   }
   .sliderbox .title {
     text-align: left;
+    padding-left: 20px;
+  }
+  .sliderbox .sliderbox__button {
     padding-left: 20px;
   }
   #services .services__box .services__item {
